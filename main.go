@@ -41,9 +41,6 @@ func main() {
 		os.Exit(1)
 	}
 
-	// func NewScanner(r io.Reader) *Scanner
-	//scanner := bufio.NewScanner(fp)
-
 	if *n {
 		cat_n(scanner)
 	} else if *b {
