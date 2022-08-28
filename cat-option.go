@@ -14,25 +14,25 @@ func cat(scanner *bufio.Scanner) {
 }
 
 // -n:行番号を付けて表示
-func cat_n(scanner *bufio.Scanner) {
-	line_num := 1
+func catN(scanner *bufio.Scanner) {
+	lineNum := 1
 	// func (s *Scanner) Scan() bool
 	for scanner.Scan() {
-		fmt.Printf("%5d: %s\n", line_num, scanner.Text())
-		line_num++
+		fmt.Printf("%5d: %s\n", lineNum, scanner.Text())
+		lineNum++
 	}
 }
 
 // -b:空行以外に行番号を付けて表示
-func cat_b(scanner *bufio.Scanner) {
-	line_num := 1
+func catB(scanner *bufio.Scanner) {
+	lineNum := 1
 	// func (s *Scanner) Scan() bool
 	for scanner.Scan() {
 		if len(scanner.Text()) == 0 {
 			fmt.Println(scanner.Text())
 		} else {
-			fmt.Printf("%5d: %s\n", line_num, scanner.Text())
-			line_num++
+			fmt.Printf("%5d: %s\n", lineNum, scanner.Text())
+			lineNum++
 		}
 	}
 }

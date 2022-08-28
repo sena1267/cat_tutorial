@@ -42,9 +42,9 @@ func main() {
 	}
 
 	if *n {
-		cat_n(scanner)
+		catN(scanner)
 	} else if *b {
-		cat_b(scanner)
+		catB(scanner)
 	} else {
 		cat(scanner)
 	}
