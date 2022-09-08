@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"flag"
+	"fmt"
 	"log"
 	"os"
 )
@@ -15,13 +16,12 @@ func main() {
 
 	flag.Parse()
 
-	/*
-		// 引数の数が合わないとき
-		if len(os.Args) != 2 {
-			fmt.Println("１つのファイル名を指定してください")
-			os.Exit(1)
-		}
-	*/
+	// 引数の数が合わないとき
+	if len(os.Args) > 2 {
+		fmt.Println("引数の数が違います。")
+		os.Exit(1)
+	}
+
 	var scanner *bufio.Scanner
 	if len(os.Args) == 2 {
 		fp, err := os.Open(os.Args[1])
