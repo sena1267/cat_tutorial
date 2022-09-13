@@ -17,7 +17,7 @@ func main() {
 	flag.Parse()
 
 	// 引数の数が合わないとき
-	if len(os.Args) > 2 {
+	if len(os.Args) > 3 {
 		fmt.Println("引数の数が違います。")
 		os.Exit(1)
 	}
