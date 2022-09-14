@@ -48,6 +48,7 @@ mango
 オプションを指定する場合：`＄cat_command [オプション] [ファイル名]`
 
 それでは、いくつかの方法で実行してみます。
+
 `＄cat_command sample.txt`
 ```
 $cat_command sample.txt
